@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import {Table} from './Table';
+import Table from './Table';
 import "./App.scss";
 
 class App extends Component {
@@ -17,17 +17,23 @@ class App extends Component {
 				{
 					firstName: "Ankita",
 					lastName: "Chakraborty"
+				},
+				{
+					firstName: "Saikat",
+					lastName: "Jana"
 				}
 			]}
 			columns={[
 				{
 					header: "First Name",
+					key: "firstName",
 					accessor: (d) => d.firstName,
-					headerStyle: {minWidth: 200},
-					cell: (value, row) => <span>{value}</span>
+					cell: (value, row) => <span>{value}</span>,
+					filterable: true
 				},
 				{
 					header: "Last Name",
+					key: "lastName",
 					accessor: (d) => d.lastName
 				}
 			]}

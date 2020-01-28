@@ -1,0 +1,8 @@
+{
+  "name": "demo-react",
+  "short_name": "demo-react",
+  "display": "standalone",
+  "start_url": "localhost:8080",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

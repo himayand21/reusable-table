@@ -1,0 +1,15 @@
+.reusable_table {
+	border-collapse: collapse;
+    border-spacing: 0;
+	margin: 20px auto;
+	td {
+		border: 1px solid lightgray;
+		margin: 0;
+		min-width: 100px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	thead td {
+		font-weight: 600;
+	}
+}

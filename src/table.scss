@@ -14,18 +14,61 @@
 				border: 1px solid lightgray;
 				line-height: 15px;
 				padding: 5px;
+				font-size: 15px;
+				width: calc(100% - 12px);
 				&:focus {
 					outline: none;
 				}
 			}
 		}
-		&:not(.search_row) {
+	}
+	thead {
+		tr {
 			td {
-				padding: 10px;
+				font-weight: 600;
+				box-sizing: border-box;
+				user-select: none;
+				padding: 0 10px;
+				height: 40px;
+				&.sortable_header {
+					cursor: pointer;
+				}
+				&.ASC_header {
+					border-top: 2px solid black;
+				}
+				&.DESC_header {
+					border-bottom: 2px solid black;
+				}
 			}
 		}
 	}
-	thead td {
-		font-weight: 600;
+	.pagination_row {
+		td > div {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			button {
+				height: 35px;
+				padding: 0 20px;
+				border: none;
+				background-color: lightgray;
+				border-radius: 2px;
+				font-size: 15px;
+				cursor: pointer;
+				user-select: none;
+				&:disabled {
+					opacity: 0.3;
+					cursor: not-allowed;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			span {
+				font-size: 14px;
+			}
+		}
 	}
 }
